@@ -9,6 +9,10 @@ class Yizhan(models.Model):
     NA_ru = models.TextField("Answer_ru")
     NQ_ru = models.TextField("Question_ru")
 
+    class Meta:
+        db_table = 'Yizhan'
+        verbose_name = 'Yizhan'
+
 
 
 class User(models.Model):
@@ -24,3 +28,7 @@ class User(models.Model):
     country = models.CharField('国家', max_length=50,null=True)
     state = models.CharField('州', max_length=50,null=True)
     zip = models.CharField('邮编', max_length=20,null=True)
+
+    class Meta:
+        db_table = 'User'
+        verbose_name = 'User'
