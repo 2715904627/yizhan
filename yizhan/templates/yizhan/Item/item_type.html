@@ -17,7 +17,7 @@
 <div class="skin-default" id="wrapper">
     <header class="navbar-header">
         <div class="brand">
-            <a class="navbar-brand" href='http://127.0.0.1:8000/bookstore/' title="mybookstore">图书后台管理系统</a>
+            <a class="navbar-brand" href='http://127.0.0.1:8000/yizhan/' title="mybookstore">图书后台管理系统</a>
         </div>
         <div class="navbar">
             <i class="sidebar-toggle iconfont icon-menu" data-toggle="push-menu" role="button">
@@ -204,7 +204,7 @@
         <section class="sidebar">
             <ul class="sidebar-menu" data-widget="tree">
                 <li>
-                    <a href="http://127.0.0.1:8000/bookstore/" title="首页">
+                    <a href="http://127.0.0.1:8000/yizhan/" title="首页">
                         <i class="iconfont icon-dashborad"></i>
                         <small>首页</small>
                     </a>
@@ -219,13 +219,13 @@
                     </a>
                     <ul class="treeview-menu">
                         <li>
-                            <a href='http://127.0.0.1:8000/bookstore/info'>
+                            <a href='http://127.0.0.1:8000/yizhan/info'>
                                 <i class="iconfont icon-circle-hollow"></i>
                                 <small>书籍信息管理</small>
                             </a>
                         </li>
                         <li class="active">
-                            <a href='http://127.0.0.1:8000/bookstore/type'>
+                            <a href='http://127.0.0.1:8000/yizhan/type'>
                                 <i class="iconfont icon-circle-hollow"></i>
                                 <small>书籍类型管理</small>
                             </a>
@@ -242,13 +242,13 @@
 						</a>
 						<ul class="treeview-menu">
 							<li>
-								<a href='http://127.0.0.1:8000/bookstore/order_info'>
+								<a href='http://127.0.0.1:8000/yizhan/order_info'>
 									<i class="iconfont icon-circle-hollow"></i>
 									<small>订单信息管理</small>
 								</a>
 							</li>
 							<li>
-								<a href='http://127.0.0.1:8000/bookstore/order_ship'>
+								<a href='http://127.0.0.1:8000/yizhan/order_ship'>
 									<i class="iconfont icon-circle-hollow"></i>
 									<small>发货信息管理</small>
 								</a>
@@ -265,7 +265,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li>
-                            <a href='http://127.0.0.1:8000/bookstore/user_info'>
+                            <a href='http://127.0.0.1:8000/yizhan/user_info'>
                                 <i class="iconfont icon-circle-hollow"></i>
                                 <small>用户信息查改</small>
                             </a>
@@ -284,7 +284,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li>
-                    <a href='http://127.0.0.1:8000/bookstore/' title="家">
+                    <a href='http://127.0.0.1:8000/yizhan/' title="家">
                         <i class="iconfont icon-home"></i>
                         <small>首页</small>
                     </a>
@@ -324,8 +324,8 @@
                                     <span>
 											<!-- 写一个th:if判断下拉框里是啥，决定按钮跳转的界面 -->
 
-											<a href="http://127.0.0.1:8000/bookstore/category_add" id="category_search_btn" type="button" class="btn btn-info">添加</a>
-											<a href="http://127.0.0.1:8000/bookstore/product_add" id="product_search_btn" type="button" class="btn btn-info" style="display:none">添加</a>
+											<a href="http://127.0.0.1:8000/yizhan/category_add" id="category_search_btn" type="button" class="btn btn-info">添加</a>
+											<a href="http://127.0.0.1:8000/yizhan/product_add" id="product_search_btn" type="button" class="btn btn-info" style="display:none">添加</a>
 										</span>
                                 </div>
                             </form>
@@ -342,13 +342,13 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {% for vars in all_type %}
+                                    {% for book in all_book %}
                                     <tr>
-                                        <td>{{ vars.category }}</td>
-                                        <td>{{ vars.type }}</td>
-                                        <td>{{ vars.description }}</td>
+                                        <td>{{ book.NQ_zh }}</td>
+                                        <td>{{ book.NA_zh}}</td>
+{#                                        <td>{{  }}</td>#}
                                         <td>
-                                            <a href="http://127.0.0.1:8000/bookstore/category_change?cat={{ vars.category }}">
+                                            <a href="http://127.0.0.1:8000/yizhan/category_change?cat={{ vars.category }}">
                                                 <button type="button" class="btn btn-info">
                                                     <i class="glyphicon glyphicon-pencil"></i>
                                                     编辑
@@ -388,7 +388,7 @@
 {#                                            <a src="#" th:utext="${product.description}">图片url</a>#}
 {#                                        </td>#}
                                         <td>
-                                            <a href="http://127.0.0.1:8000/bookstore/product_change">
+                                            <a href="http://127.0.0.1:8000/yizhan/product_change">
                                                 <button type="button" class="btn btn-info">
                                                     <i class="glyphicon glyphicon-pencil"></i>
                                                     编辑

@@ -23,7 +23,7 @@
 				<strong>MYbookstore</strong>
 			</a>
 		</div>
-		<form action="http://127.0.0.1:8000/bookstore/login" method="post" class="login-body">
+		<form action="http://127.0.0.1:8000/yizhan/login" method="post" class="login-body">
 			<p class="text-primary text-center">欢迎使用图书后台管理系统<br>(只输入手记号验证短信也可以登录哦)</p>
 			<div class="form">
 				<div class="form-group">
@@ -96,7 +96,7 @@
 					</a>
 				</div>
 				<p class="text-center">
-					<a href="http://127.0.0.1:8000/bookstore/reg">没有账号?前往注册账号</a>
+					<a href="http://127.0.0.1:8000/yizhan/reg">没有账号?前往注册账号</a>
 				</p>
 			</div>
 		</form>
@@ -182,7 +182,7 @@
 
 				if (username === "admin" && password === "admin" && check === "验证成功") {
 					$.get('http://localhost:8080/viewMain',{},function () {
-						location.href="http://127.0.0.1:8000/bookstore/";
+						location.href="http://127.0.0.1:8000/yizhan/";
 					})
 				}
 			})

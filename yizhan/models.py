@@ -8,6 +8,7 @@ class Yizhan(models.Model):
     NQ_en = models.TextField("Question_en",null=True)
     NA_ru = models.TextField("Answer_ru",null=True)
     NQ_ru = models.TextField("Question_ru",null=True)
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         db_table = 'Yizhan'

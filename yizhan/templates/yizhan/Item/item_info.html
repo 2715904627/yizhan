@@ -19,7 +19,7 @@
     <div class="skin-default" id="wrapper">
         <header class="navbar-header">
             <div class="brand">
-                <a class="navbar-brand" href='http://127.0.0.1:8000/bookstore/' title="mybookstore">图书后台管理系统</a>
+                <a class="navbar-brand" href='http://127.0.0.1:8000/yizhan/' title="mybookstore">图书后台管理系统</a>
             </div>
             <div class="navbar">
                 <i class="sidebar-toggle iconfont icon-menu" data-toggle="push-menu" role="button">
@@ -206,7 +206,7 @@
             <section class="sidebar">
                 <ul class="sidebar-menu" data-widget="tree">
                     <li>
-                        <a href="http://127.0.0.1:8000/bookstore/" title="首页">
+                        <a href="http://127.0.0.1:8000/yizhan/" title="首页">
                             <i class="iconfont icon-dashborad"></i>
                             <small>首页</small>
                         </a>
@@ -221,13 +221,13 @@
                         </a>
                         <ul class="treeview-menu">
                             <li class="active">
-                                <a href='http://127.0.0.1:8000/bookstore/info'>
+                                <a href='http://127.0.0.1:8000/yizhan/info'>
                                     <i class="iconfont icon-circle-hollow"></i>
                                     <small>书籍信息管理</small>
                                 </a>
                             </li>
                             <li>
-                                <a href='http://127.0.0.1:8000/bookstore/type'>
+                                <a href='http://127.0.0.1:8000/yizhan/type'>
                                     <i class="iconfont icon-circle-hollow"></i>
                                     <small>书籍类型管理</small>
                                 </a>
@@ -244,13 +244,13 @@
                         </a>
                         <ul class="treeview-menu">
                             <li>
-                                <a href='http://127.0.0.1:8000/bookstore/order_info'>
+                                <a href='http://127.0.0.1:8000/yizhan/order_info'>
                                     <i class="iconfont icon-circle-hollow"></i>
                                     <small>订单信息管理</small>
                                 </a>
                             </li>
                             <li>
-                                <a href='http://127.0.0.1:8000/bookstore/order_ship'>
+                                <a href='http://127.0.0.1:8000/yizhan/order_ship'>
                                     <i class="iconfont icon-circle-hollow"></i>
                                     <small>发货信息管理</small>
                                 </a>
@@ -267,7 +267,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li>
-                                <a href='http://127.0.0.1:8000/bookstore/user_info'>
+                                <a href='http://127.0.0.1:8000/yizhan/user_info'>
                                     <i class="iconfont icon-circle-hollow"></i>
                                     <small>用户信息查改</small>
                                 </a>
@@ -286,7 +286,7 @@
                 </h1>
                 <ol class="breadcrumb">
                     <li>
-                        <a href='http://127.0.0.1:8000/bookstore/' title="家">
+                        <a href='http://127.0.0.1:8000/yizhan/' title="家">
                             <i class="iconfont icon-home"></i>
                             <small>首页</small>
                         </a>
@@ -324,7 +324,7 @@
                                             <i class="glyphicon glyphicon-search"></i>搜索
                                         </button>
                                         <span>
-                                            <a href="http://127.0.0.1:8000/bookstore/bookinfo_add" type="button" class="btn btn-info">添加书籍</a>
+                                            <a href="http://127.0.0.1:8000/yizhan/bookinfo_add" type="button" class="btn btn-info">添加书籍</a>
                                         </span>
                                     </div>
 
@@ -357,13 +357,13 @@
                                             <td>{{ book.on_sale }}</td>
                                             <td>{{ book.pub }}</td>
                                             <td>
-                                                <a href="http://127.0.0.1:8000/bookstore/bookinfo_change?book_id={{ book.id }}">
+                                                <a href="http://127.0.0.1:8000/yizhan/bookinfo_change?book_id={{ book.id }}">
                                                     <button type="button" class="btn btn-info">
                                                         <i class="glyphicon glyphicon-pencil"></i>
                                                         编辑
                                                     </button>
                                                 </a>
-                                                <a href="http://127.0.0.1:8000/bookstore/bookinfo_delete?book_id={{ book.id }}">
+                                                <a href="http://127.0.0.1:8000/yizhan/bookinfo_delete?book_id={{ book.id }}">
                                                     <button type="button" class="btn btn-danger">
                                                         <i class="glyphicon glyphicon-remove"></i>
                                                         删除
@@ -481,8 +481,8 @@
                         <p>是否确定退出</p>
                     </div>
                     <div class="modal-footer">
-                        <a type="button" href="http://127.0.0.1:8000/bookstore" class="btn btn-default" data-dismiss="modal">取消</a>
-                        <a type="button" href="http://127.0.0.1:8000/bookstore/logout" class="btn btn-primary">登出</a>
+                        <a type="button" href="http://127.0.0.1:8000/yizhan" class="btn btn-default" data-dismiss="modal">取消</a>
+                        <a type="button" href="http://127.0.0.1:8000/yizhan/logout" class="btn btn-primary">登出</a>
                     </div>
                 </div>
             </div>
